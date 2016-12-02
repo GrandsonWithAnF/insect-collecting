@@ -1,0 +1,953 @@
+\documentclass[letterpaper,10pt]{article}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[letterpaper,textwidth=7.5in,textheight=10in]{geometry}
+\usepackage{amsfonts}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{amsmath}
+
+\begin{document}
+	
+\newcommand*{\mybox}[1]{\framebox{#1}}	
+
+\scriptsize{
+%\makebox[0.00cm]{} \makebox[1.0cm]{O}  ORDER: 0.00 cm \par
+%\makebox[0.20cm]{} \makebox[1.0cm]{O-} Suborder: 0.20 cm \par
+%\makebox[0.40cm]{} \makebox[1.0cm]{F+} Superfamily: 0.40 cm \par
+%\makebox[0.60cm]{} \makebox[1.0cm]{F} \textbf{Family}: 0.60 cm \par
+%\makebox[0.80cm]{} \makebox[1.0cm]{F-} Subfamily: 0.80 cm \par
+%\makebox[1.00cm]{} \makebox[1.0cm]{G} \textit{Genus}: 1.00 cm \\
+
+%\makebox[1.75cm]{} \makebox[0.45cm]{ID:} 1.75cm, 0.45cm \par
+%\makebox[1.75cm]{} \makebox[1.0cm]{DATE:} 1.75cm, 1.0cm \par
+%\makebox[1.75cm]{} \makebox[1.95cm]{LOCATION:} 1.75cm, 1.95cm \par
+%
+%
+%
+%\hrulefill \\
+
+%
+%
+%
+\makebox[0.0cm]{} \makebox[1.0cm]{O} Archaeognatha \par
+
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Machilidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Meinetellidae} \par
+%
+%
+%
+\makebox[0.0cm]{} \makebox[1.0cm]{O} ZYGENTOMA \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Lepismatidae} \par
+%
+%
+%
+\makebox[0.0cm]{} \makebox[1.0cm]{O} EPHEMEROPTERA \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Baetidae} (small minnow mayflies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Heptageniidae} (flat-headed mayflies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Ephemeridae} (common burrowing mayflies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Polymitarcyidae} (pale burrowing mayflies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Metretopodidae} (cleft-footed minnow mayflies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Isonychiidae} (brush-legged mayflies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Siphlonuridae} (minnow mayflies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Leptophlebiidae} (pronggills) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Ephemerellidae} (spiny crawling mayflies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Leptohyphidae} (little stout crawling mayflies) \par
+%
+%
+%
+\makebox[0.0cm]{} \makebox[1.0cm]{O} ODONATA \par
+
+\makebox[0.20cm]{} \makebox[1.0cm]{SO} Anisoptera (dragonflies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Libellulidae} (skimmers) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Macromiidae} (cruisers) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Aeshnidae} (darners) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Cordulegastridae} (spiketails) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Gomphidae} (clubtails) \par
+
+\makebox[0.20cm]{} \makebox[1.0cm]{SO} Zygoptera (damselflies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Lestidae} (spreadwings) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Coenagrionidae} (common damselflies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Calopterygidae} (broad-winged damselflies) \par
+%
+%
+%
+\makebox[0.0cm]{} \makebox[1.0cm]{O} PLECOPTERA  \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Peltoperlidae} (roachlike stoneflies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Perlidae} (common stoneflies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Pteronarcyidae} (giant stoneflies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Perlodidae} (perlodid stoneflies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Capniidae} (slender winter stoneflies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Nemouridae} (nemourid broadbacks) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Taeniopterygidae} (taeniopterygid broadbacks) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Leuctridae} (rolled-winged stoneflies) \par
+%
+%
+%
+\makebox[0.0cm]{} \makebox[1.0cm]{O} BLATTODEA \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Blatellidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Cryptocercidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Blaberidae} \par
+%
+%
+%
+\makebox[0.0cm]{} \makebox[1.0cm]{O} ISOPTERA \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Rhinotermitidae} \par
+%
+%
+%
+\makebox[0.0cm]{} \makebox[1.0cm]{O} Mantodea \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Mantidae} \par
+%
+%
+%
+\makebox[0.0cm]{} \makebox[1.0cm]{O} DERMAPTERA \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Forficulidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Carciniphoridae} (seaside, ring-legged earwigs) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Labiduridae} (striped earwigs) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Labiidae} (little earwigs) \par
+%
+%
+%
+\makebox[0.0cm]{} \makebox[1.0cm]{O} PHASMATODEA \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Heteronemiidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Pseudophasmatidae} (striped walking sticks) \par
+%
+%
+%
+\makebox[0.0cm]{} \makebox[1.0cm]{O} ZORAPTERA \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Zorotypidae} \par
+%
+%
+%
+\makebox[0.0cm]{} \makebox[1.0cm]{O} EMBIOPTERA  \par
+%
+%
+%
+\makebox[0.0cm]{} \makebox[1.0cm]{O} ORTHOPTERA \par
+
+\makebox[0.20cm]{} \makebox[1.0cm]{SO} Ensifera (long-horned Orthoptera) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Gryllidae} \par
+\makebox[0.80cm]{} \makebox[1.0cm]{F-} \textbf{Gryllinae} (house, field crickets) \par
+\makebox[0.80cm]{} \makebox[1.0cm]{F-} \textbf{Nemobiinae} (ground crickets) \par
+\makebox[0.80cm]{} \makebox[1.0cm]{F-} \textbf{Trigonidiinae} (sword-tail crickets) \par
+\makebox[0.80cm]{} \makebox[1.0cm]{F-} \textbf{Eneopterinae} \par
+\makebox[0.80cm]{} \makebox[1.0cm]{F-} \textbf{Myrmecophilinae} (ant-loving crickets) \par
+\makebox[0.80cm]{} \makebox[1.0cm]{F-} \textbf{Mogoplistinae} (scaly crickets) \par
+\makebox[0.80cm]{} \makebox[1.0cm]{F-} \textbf{Oecanthinae} (tree crickets) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Rhaphiodhoridae} (cave, camel crickets)	\par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Gryllacrididae} (leaf-rolling crickets) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Gryllotalpidae} (mole crickets) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Tettigoniidae} \par
+\makebox[0.80cm]{} \makebox[1.0cm]{F-} \textbf{Tettigoniinae} (shield-backed grasshoppers) \par
+\makebox[0.80cm]{} \makebox[1.0cm]{F-} \textbf{Pseudophyllinae} (true katydids) \par
+\makebox[0.80cm]{} \makebox[1.0cm]{F-} \textbf{Phaneropterinae} (leaf katydids) \par
+\makebox[0.80cm]{} \makebox[1.0cm]{F-} \textbf{Conocephalinae} (meadow grasshoppers) \par
+\makebox[0.80cm]{} \makebox[1.0cm]{F-} \textbf{Copiphorinae} (cone-headed grasshoppers) \par
+
+\makebox[0.20cm]{} \makebox[1.0cm]{O-} Caelifera (short-horned Orthoptera) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Romaleidae} (lubber grasshoppers) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Acrididae} \par
+\makebox[0.80cm]{} \makebox[1.0cm]{F-} \textbf{Melanoplinae} (spur-throated grasshoppers) \par
+\makebox[0.80cm]{} \makebox[1.0cm]{F-} \textbf{Podisminae} \par
+\makebox[0.80cm]{} \makebox[1.0cm]{F-} \textbf{Cyrtacanthacridinae} (bird locusts) \par
+\makebox[0.80cm]{} \makebox[1.0cm]{F-} \textbf{Gompocerinae} (slant-faced grasshoppers) \par
+\makebox[0.80cm]{} \makebox[1.0cm]{F-} \textbf{Acridinae} (tooth-legged grasshoppers) \par
+\makebox[0.80cm]{} \makebox[1.0cm]{F-} \textbf{Oedipodinae} (band-winged grasshoppers) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Tetrigidae} (pygmy grasshoppers) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Tridactylidae} (pygmy mole crickets) \par
+%
+%
+%
+\makebox[0.0cm]{} \makebox[1.0cm]{O} HEMIPTERA \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Cimicidae} (bed bugs, swallow bugs, bat bugs) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Pentatomidae} (stink bugs) \par
+\makebox[0.80cm]{} \makebox[1.0cm]{F-} \textbf{Pentatominae} (plant-feeding stink bugs) \par
+\makebox[0.80cm]{} \makebox[1.0cm]{F-} \textbf{Asopinae} (predacious stink bugs) \par
+\makebox[0.80cm]{} \makebox[1.0cm]{F-} \textbf{Podopinae} (turtle bugs) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Acanthosomatidae} (parent bugs) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Scutelleridae} (shield bugs) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Thyreocoridae} (negro bugs) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Cydnidae} (burrower bugs) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Reduviidae} (assassin bugs, thread-legged bugs) \par
+\makebox[0.80cm]{} \makebox[1.0cm]{F-} \textbf{Harpactorinae} \par
+\makebox[0.80cm]{} \makebox[1.0cm]{F-} \textbf{Microtominae} \par
+\makebox[0.80cm]{} \makebox[1.0cm]{F-} \textbf{Apiomerinae} \par
+\makebox[0.80cm]{} \makebox[1.0cm]{F-} \textbf{Ectrichodiinae} \par
+\makebox[0.80cm]{} \makebox[1.0cm]{F-} \textbf{Triatominae} \par
+\makebox[0.80cm]{} \makebox[1.0cm]{F-} \textbf{Stenopodainae} \par
+\makebox[0.80cm]{} \makebox[1.0cm]{F-} \textbf{Emesinae} (thread-legged bugs) \par
+\makebox[0.80cm]{} \makebox[1.0cm]{F-} \textbf{Phymatidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Nabidae} (damsel bugs) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Tingidae} (lace bugs) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Piesmatidae} (ash-gray leaf bugs) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Aradidae} (flat bufs) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Lygaeidae} (seed bugs) \par
+\makebox[0.80cm]{} \makebox[1.0cm]{F-} \textbf{Lygaeinae} \par
+\makebox[0.80cm]{} \makebox[1.0cm]{F-} \textbf{Ischnorhynchinae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Blissidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Geocordiae} (big-eyed bugs) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Cymidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Rhyparochromidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Berytidae} (stilt bugs) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Coreidae} (leaf-footed bugs) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Rhopalidae} (scentless plant bugs) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Alydidae} (broad-headed bugs) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Pyrrhocoridae} (red bugs) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Largidae} (largid bugs) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Miridae} (plant bugs) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Lyctocoridae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Ceratocombidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Enicocephalidae} (gnat bugs, unique-headed bugs) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Belostomatidae} (giant water bugs) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Nepidae} (water scorpions) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Corixidae} (water boatmen)\par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Notonectidae} (backswimmers) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Pleidae} (pygmy backswimmers) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Naucoridae} (creeping water bugs) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Gelastocoridae} (toad bugs) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Ochteridae} (velvety shore bugs) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Saldidae} (shore bugs) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Hebridae} (velvet water bugs) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Veliidae} (smaller water striders, riffle bugs) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Mesoveliidae} (water treaders) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Hydrometridae} (water measurers, marsh treaders) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Gerridae} (water striders) \par
+
+\makebox[0.20cm]{} \makebox[1.0cm]{O-} Auchenorrhyncha \par
+\makebox[0.40cm]{} \makebox[1.0cm]{F+} Cicadoidea \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Cicadidae} (cicadas) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Cicadellidae} (leafhoppers) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Cercopidae} (spittlebugs) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Membracidae} (treehoppers) \par
+\makebox[0.40cm]{} \makebox[1.0cm]{F+} Fulgoroidea \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Issidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Flatidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Derbidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Dictyopharidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Caliscelidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Delphacidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Cixiidae} \par
+
+\makebox[0.20cm]{} \makebox[1.0cm]{O-} Sternorrhyncha \par
+\makebox[0.40cm]{} \makebox[1.0cm]{F+} Aphidoidea \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Anoeciddae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Aphididae} (common aphids) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Lachnidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Drepanosiphidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Mindaridae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Pemphigidae} (woolly aphids, gall-making aphids) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Hormaphididae} \par
+\makebox[0.40cm]{} \makebox[1.0cm]{F+} Phylloxeroidea \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Adelgidae} (pine, spruce aphids) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Phylloxeridae} \par
+\makebox[0.40cm]{} \makebox[1.0cm]{F+} Psylloidea \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Psyllidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Triozidae} \par
+\makebox[0.40cm]{} \makebox[1.0cm]{F+} Aleyrodoidea \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Aleyrodidae} \par
+\makebox[0.40cm]{} \makebox[1.0cm]{F+} Coccoidea \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Coccidae} (soft scale insects) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Pseudococcidae} (mealy bugs) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Dactylopiidae} \par
+%
+%
+%
+\makebox[0.0cm]{} \makebox[1.0cm]{O} THYSANOPTERA \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Phlaeothripidae} (tube-tailed thrips) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Thripidae} (common thrips) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Aeolothripidae} (banded thrips) \par
+%
+%
+%
+\makebox[0.0cm]{} \makebox[1.0cm]{O} PSOCOPTERA \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Lepidopsocidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Psocidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Myopsocidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Dasydemellidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Amphipsocidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Caeciliidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Peripsocidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Mesopsocidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Trogiidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Liposcelidae} \par
+%
+%
+%
+\makebox[0.0cm]{} \makebox[1.0cm]{O} PHTHIRAPTERA \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Menoponidae} \par
+\makebox[0.20cm]{} \makebox[1.0cm]{O-} Trichodectidae \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Philopteridae} \par
+\makebox[0.20cm]{} \makebox[1.0cm]{O-}Anoplura \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Linognathidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Pediculidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Phthiridae} \par
+%
+%
+%
+\makebox[0.0cm]{} \makebox[1.0cm]{O} LEPIDOPTERA\par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Lycaenidae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Polyommatinae} (blues) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Theclinae} (hairstreaks, elfins) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Miletinae} (harvesters) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Riodinidae} (metalmarks) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Papilionidae} (swallowtails) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Pieridae} (whites, sulfurs) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Nymphalidae} (brush-footed butterflies) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Libytheinae} (snout butterflies) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Heliconiinae} (heliconians) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Satyrinae} (satyrs, wood nymphs) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Danainae} (monarchs) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Limenitidinae} (admirals) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Nymphalinae} (anglewings) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Apaturinae} (emperors) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Melitaeinae} (checkerspots, crescents) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Argynninae} (fritillaries) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Hesperiidae} (skippers) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Hesperiinae} (banded skippers) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Heteropterinae} (intermediate skippers) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Pyrginae} (pyrgine skippers) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Hepialidae} (ghost moths) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Eriocraniidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Adelidae} (fairy moths) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Heliozelidae} (shield-bearer moths) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Incurvariidae} (leafcutter moths) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Prodoxidae} (yucca moths) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Argyresthiidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Yponomeutidae} (ermine moths) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Plutellidae} (diamondback moths) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Tineidae} (clothes moths) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Psychidae} (bagworm moths) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Coleophoridae} (casebearer moths) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Coleophorinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Momphinae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Gracillariidae} (leaf blotch miner moths) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Gelechiidae} (twirler moths) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Cosmopterygidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Elachistidae} (grassminers) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Amphisbatidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Oecophoridae} (concealer moths) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Agonoxenidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Bucculatricidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Choreutidae} (metalmark moths) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Glyphipterigidae} (sedge moths) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Thyrididae} (wingow-wing moths) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Epermeniidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Scythrididae} (scythridid, flower moths) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Pterophoridae} (plume moths) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Uraniidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Carposinidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Alucitidae} (six-plume, many-plume moths) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Pyralidae} (snout moths) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Crambinae} (close-wings, grass moths) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Phyctinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Epipaschiinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Pyraustinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Galleriinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Pyralinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Acentropinae} (aquatic snout moths) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Ancylolomiinae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Tortricidae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Tortricinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Olethreutinae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Limacodidae} (slug caterpillar moths) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Sesiidae} (clearwing moths) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Zygaenidae} (smoky moths, burnets) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Cossidae} (carpenterworms, leopard moths) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Saturniidae} (giant silkworm moths) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Lasiocampidae} (tent caterpillars, lappet moths) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Sphingidae} (sphinx moths) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Macroglossinae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Arctiidae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Arctiinae} (tiger moths) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Lithosiinae} (lichen, footmen moths) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Ctenuchinae} (wasp moths) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Noctuidae} (owlet moths) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Plusiinae} (loopers, semiloopers) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Acronictinae} (dagger moths) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Acontiinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Ammphipyrinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Raphiinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Noctuinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Heliothinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Cuculliinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Psaphidinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Hadeninae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Pantheinae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Erebidae} (underwings) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Nolidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Notodontidae} (prominents) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Geometridae} (inchworms, geometer moths) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Alsophilinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Geometrinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Archiearinae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Drepanidae} (hook-tips, thyatirid moths) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Bombycidae} (true silkworm moths) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Mimallonidae} (sack-bearers) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Megalopygidae} (flannel moths) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Lymantriidae} (tussock moths) \par
+%				
+%
+%				
+\makebox[0.0cm]{} \makebox[1.0cm]{O} TRICHOPTERA \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Rhyacophilidae} (free-living caddisflies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Glossosomatidae} (saddle-case makers) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Hydropsychidae} (net-spinning caddisflies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Philopotamidae} (finger-net caddisflies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Polycentropodidae} (trumpet-net, tube-making caddisflies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Hydroptilidae} (purse-case makers) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Limnephilidae} (northern caddisflies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Uenoidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Apataniidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Leptoceridae} (long-horned caddisflies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Phryganeidae} (large caddisflies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Molannidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Heliopsychidae} (snail-case caddisflies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Pdpmtpcerodae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Lepidostomatidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Brachycentridae} \par
+%
+%
+%
+\makebox[0.0cm]{} \makebox[1.0cm]{O} NEUROPTERA \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Chrysopidae} (green lacewings) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Hemerobiidae} (brown lacewings) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Myrmeleontidae} (antlions) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Sisyridae} (spongillaflies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Mantispidae} (mantisflies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{berothidae} (beaded lacewings) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Ascalaphidae} (owlflies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Dilaridae} (pleasing lacewings) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Polystoechotidae} (giant lacewings) \par
+%
+%
+%
+\makebox[0.0cm]{} \makebox[1.0cm]{O} MEGALOPTERA \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Corydalidae} (dobsonflies, fishflies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Sialidae} (alderflies) \par
+%
+%
+%
+\makebox[0.0cm]{} \makebox[1.0cm]{O} COLEOPTERA \par
+\makebox[0.20cm]{} \makebox[1.0cm]{O-} Archostemata \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Cupedidae} (reticulated beetles) \par
+\makebox[0.20cm]{} \makebox[1.0cm]{O-} Adephaga \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Carabidae} (ground beetles, round sand beetles) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Carabinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Nebriinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Omophroninae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Scaritinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Elaphrinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Brachiniae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Trechinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Harpalinae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Cicindelidae} (tiger beetles) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Rhysodidae} (wrinkled bark beetles) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Dytiscidae} (predacious diving beetles) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Halipidae} (crawling water beetles) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Noteridae} (burrowing water beetles) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Gyrinidae} (whirligig beetles) \par
+\makebox[0.20cm]{} \makebox[1.0cm]{O-} Polyphaga \par
+\makebox[0.40cm]{} \makebox[1.0cm]{F+} Byrrhoidea \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Elmidae} (riffle beetles) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Dryopidae} (long-toed water beetles) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Psephenidae} (water pennies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Limnichidae} (minute marsh-loving beetles) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Lutrochidae} (travertine beetles) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Heteroceridae} (variegated mud-loving beetles) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Ptilodactylidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Byrrhidae} (pill beetles) \par
+\makebox[0.40cm]{} \makebox[1.0cm]{F+} Dascilloidea \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Rhipiceridae} \par
+\makebox[0.40cm]{} \makebox[1.0cm]{F+} Scirtoidea \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Scirtidae} \par
+\makebox[0.40cm]{} \makebox[1.0cm]{F+} Hydrophiloidea \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Hydrophilidae} (water scavenger beetles) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Hydraenidae} (minute moss beetles) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Histeridae} (hister, clown beetles) \par
+\makebox[0.40cm]{} \makebox[1.0cm]{F+} Staphylinoidea \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Silphidae} (carrion beetles) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Agyrtidae} (agyrtid beetles) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Leiodidae} (small carrion beetles, round fungus beetles) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Staphylinidae} (rove beetles) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Oxytelinae} (spiny-legged rove beetles) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Staphylininae} (large rove beetles) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Quediinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Oxyporinae} (cross-toothed rove beetles) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Tachyporinae} (crablike rove beetles) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Steninae} (water skaters) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Paederinae} (paedrerine rove beetles) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Aleocharinae} (obscure rove beetles) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Omaliinae} (ocellate rove beetles) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Pselaphinae} (short-winged mold beetles) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Scydmaenidae} (antlike stone beetles) \par
+\makebox[0.40cm]{} \makebox[1.0cm]{F+} Scarabaeoidea \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Scarabaeidae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Scarabaeinae} (dung beetles, tumblebugs) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Cetoniinae} (bumble flower beetles) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Rutelinae} (shining leaf chafers) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Melolonthinae} (june beetles, chafers) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Dynastinae} (rhinoceros, herculuse, elephant beetles) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Ceratocanthidae} (contractile scarabs) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Geotrupidae} (earth-boring scarabs) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Trogidae} (skin beetles) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Ochodaeidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Hybosoridae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Lucanidae} (stag beetles) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Passalidae} (bess beetles) \par
+\makebox[0.40cm]{} \makebox[1.0cm]{F+} Elateroidea \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Artematopodidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Cantharidae} (soldier beetles) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Lampyridae} (fireflies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Phengodidae} (glowworms) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Lycidae} (net-winged beetles) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Elateridae} (click beetles, wireworms) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Eucnemidae} (false click beetles) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Throscidae} \par
+\makebox[0.40cm]{} \makebox[1.0cm]{F+} Cleroidea \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Cleridae} (checkered beetles) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Melyridae} (soft-winged flower beetles) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Trogossitidae} (bark-gnawing beetles) \par
+\makebox[0.40cm]{} \makebox[1.0cm]{F+} Buprestoidea \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Buprestidae} (metallic wood-boring beetles) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Polycestinae} (yellow-marked buprestids) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Acmaeoderinae} \par
+\makebox[0.40cm]{} \makebox[1.0cm]{F+} Tenebrionoidea \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Meloidae} (blister beetles) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Ripiphoridae} (wedge-shaped beetles) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Mordellidae} (tumbling flower beetles) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Tenebrionidae} (darkling beetles) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Tenebrioniae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Diaperinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Coelometopinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Bolitophaginae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Lagriinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Alleculinae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Zopheridae} (ironclad beetles) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Monommatidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Ciidae} (minute tree-fungus beetles) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Tetratomidae} (polypore fungus beetles) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Synchroidae} (synchroa bark beetles) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Melandryidae} (false darkling beetles) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Scraptiidae}  \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Mycetophagidae} (hairy fungus beetles) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Colydiidae} (colydiid beetles) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Pyrochroidae} (fire-colored beetles) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Pyrochroinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Pedilinae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Salpingidae} (narrow-waisted bark beetles) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Anthicidae} (antlike flower beetles) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Oedemeridae} (false blister beetles) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Aderidae} (antlike leaf beetles) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Stenotrachelidae} (false long-horned beetles) \par
+\makebox[0.40cm]{} \makebox[1.0cm]{F+} Bostrichoidea \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Dermestidae} (dermestid beetles) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Bostrichidae} (branch, twig borers) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Anobiidae} (death-watch, spider beetles) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Anobiinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Dryophilinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Ptilininae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Dorcatominae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Eucradinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Ptininae} (spider beetles) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Nosodendridae} \par
+\makebox[0.40cm]{} \makebox[1.0cm]{F+} Derodontoidea \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Derodontidae} \par
+\makebox[0.40cm]{} \makebox[1.0cm]{F+} Lymexyloidea \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Lymexylidae} (ship-timber beetles) \par
+\makebox[0.40cm]{} \makebox[1.0cm]{F+} Cucujoidea \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Nitidulidae} (sap beetles) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Cucujidae} (flat bark beetles) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Silvanidae} (silvanid flat bark beetles) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Passandridae} (parasitic flat bark beetles) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Laemophloeidae} (lined flat bark beetles) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Monotomidae} (root-eating beetles) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Sphindidae} (cryptic slime mold beetles) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Languridae} (lizard beetles) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Endomychidae} (handsome fungus beetles) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Cerylonidae} (minute bark beetles) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Latridiidae} (minute brown scavenger beetles) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Erotylidae} (pleasing fungus beetles) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Phalacridae} (shining flower beetles) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Eucinetidae} (plate-thigh beetles) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Corylophidae} (minute fungus beetles) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Cryptophagidae} (silken fungus beetles) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Byturidae} (fruitworm beetles) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Coccinellidae} (lady beetles) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Coccinellinae} (black-spotted lady beetles) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Scymninae} (yellow-spotted, dusky, Australian lady beetles) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Chilocorinae} (red-spotted lady beetles) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Epilachininae} (plant-eating lady beetles) \par
+\makebox[0.40cm]{} \makebox[1.0cm]{F+} Chrysomeloidea \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Bruchidae} (bean weevils) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Orsodacnidae} (orsodacnid leaf beetles) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Chrysomelidae} (leaf beetles) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Eumolpinae} (oval leaf beetles) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Chrysomelinae} (broad-bodied leaf beetles) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Cryptocephalniae} (cylindrical leaf, warty leaf, short-horned leaf beetles) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Donaciinae} (long-horned leaf beetles) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Synetinae} (punctate leaf beetles) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Criocerinae} (shining leaf beetles) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Galerucinae} (skeletonizing leaf beetles) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Alticinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Hispinae} (leaf-mining leaf beetles) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Cassidinae} (tortoise beetles) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Cerambycidae} (long-horned beetles) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Lamiinae} (flat-faced longhorns) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Cerambycinae} (round-necked longhorns) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Lepturinae} (flower longhorns) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Parandrinae} (aberrant longhorns) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Prioninae} (tooth-necked longhorns) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Aseminae} (asemine longhorns) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Disteniinae} (disteniine longhorns) \par
+\makebox[0.40cm]{} \makebox[1.0cm]{F+} Curcolionoidea \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Curculionidae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Curculioninae} (acorn, nut, fruit, seed, flea, antlike weevils) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Cryptorhynchinae} (hidden snout weevils) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Zygopinae} (twig, stem weevils) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Dryophthorinae} (billbugs, grain weevils) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Erirhininae} (marsh weevils) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Ceutorhynchinae} (minute seed weevils) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Lixinae} (cylindrical weevils) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Mesoptiliinae} (wedge-shaped weevils) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Molytinae} (molytine weevils) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Entiminae} (broad-nosed weevils) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Baridinae} (flower weevils) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Cyclominae} (underwater weevils) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Hyperinae} (clover, alfalfa weevils) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Scolytinae} (bark beetles) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Platypodinae} (pinhole borers) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Attelabidae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Attelabinae} (leaf-rolling weevils) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Pterocolinae} (thief weevils) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Rhynchitinae} (tooth-nosed snout weevils) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Ithyceridae} (New York weevils) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Anthribidae} (fungus weevils) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Brentidae} (primitive, straight-snout, pear-shaped weevils) \par
+%
+%
+%
+\makebox[0.0cm]{} \makebox[1.0cm]{O} STREPSIPTERA \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Stylopidae} \par
+%
+%
+%
+\makebox[0.0cm]{} \makebox[1.0cm]{O} DIPTERA \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Tipulidae} (crane flies) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Cylindrotominae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Limoniinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Pedciinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Tipulinae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Trichoceridae} (winter crane flies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Pytchopteridae} (phantom crane flies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Ceratopogonidae} (biting midges) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Culcidae} (mosquitoes) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Culicine} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Toxorhynchitinae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Chaoboridae} (phantom midges) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Corethrellidae} (frog midges) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Simuliidae} (black flies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Psychodidae} (moth flies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Anisopodidae} (wood gnats) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Scatopsidae} (minute black scavenger flies) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Scatopsinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Aspistinae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Blephariceridae} (net-winged midges) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Thaumaleidae} (seepage flies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Dixidae} (dixid midges) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Cecidomyiidae} (gall midges) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Bibionidae} (March flies) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Bibioninae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Pleciinae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Mycetophilidae} (fungus gnats) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Mycetophilinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Scopphilinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Keroplatinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Ditomyiinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Lygistorrhiniae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Sciaridae} (dark-winged fungus gnats) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Axymyiidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Chironomidae} (midges) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Chironominae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Orthocladiinae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Tabanidae} (horse flies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Athericidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Rhagionidae} (snipe flies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Pelecorhynchidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Stratiomyidae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Stratiomyinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Clitellariinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Beridinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Nemotelinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Pachygastrinae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Xylomyidae}  \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Xylophagidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Acroceridae} (small-headed flies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Asilidae} (robber flies) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Dasypogoninae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Asilinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Laphystiinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Stichopogoninae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Dioctriinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Stenopogoninae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Trigonomiminae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Laphriinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Leptogastrinae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Mydidae} (Mydas flies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Therevidae} (stiletto flies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Scenopinidae} (window flies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Bombyliidae} (bee flies) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Bombyliinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Anthracinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Phthiriinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Systropodinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Toxophorinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Exoprosopinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Lomatiinae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Empididae} (dance flies) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Empidinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Hemerodrominae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Ocydrominae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Tachydrominae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Hybotinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Clinocerinae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Dolichopodidae} (long-legged flies) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Microphorinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Dolichopodinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Plagioneurinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Rhaphiinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Neurigoninae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Hydrophorinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Sciapodinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Medeterinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Diaphorinae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Syrphidae} (flower, hover flies) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Syrphinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Eristalinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Microdontinae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Pipunculidae} (big-headed flies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Phoridae} (scuttle flies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Platypezidae} (flat-footed flies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Lonchopteridae} (spear-winged flies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Muscidae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Muscinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Stomxyinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Coesnosiinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Azeliinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Phaoniinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Reinwardtiinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Mydaeniae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Fanniidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Scathophagidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Anthomyiidae} (root maggot flies) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Anthomyiinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Fucelliinae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Calliphoridae} (blow flies) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Luciliinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Calliphorinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Polleniinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Chrysomyiinae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Sarcophagidae} (flesh flies) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Sarcophaginae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Miltogramminae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Tachinidae} (parasitic flies) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Tachiniae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Exoristinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Dexiinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Phasiinae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Rhinophoridae} (woodlouse flies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Oestridae} (bot flies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Hippoboscidae} (louse flies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Nycteribiidae} (wingless bat flies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Streblidae} (bat flies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Tephritidae} (fruit flies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Platystomatidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Richardiidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Ulidiidae} (picture-winged flies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Lonchaeidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Pallopteridae} (flutter flies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Drosophilidae} (small fruit flies, vinegar flies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Diastatidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Chyromyidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Ephydridae} (shore flies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Chloropidae} (grass, eye flies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Opomyzidae}  \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Anthomyzidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Milichiidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Carnidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Braulidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Agromyzidae} (leaf-mining flies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Psilidae} (rust flies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Strongylophthalmyiidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Tanypezidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Chamaemyiidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Lauxaniidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Sciomyzidae} (marsh flies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Dryomyzidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Coelopidae} (seaweed flies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Conopidae} (thick-headed flies) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Conopinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Dalmanniinae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Stylogastridae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Pyrgotidae} (light flies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Neriidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Pseudopomyzidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Ropalomeridae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Micropezidae} (stilt-legged flies) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Taeniapterinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Calobatinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Micropezinae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Clusiidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Diopsidae} (stalk-eyed flies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Piophilidae} (skipper flies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Aulacigastridae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Perisceliddidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Odiniidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Asteiidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Heleomyzidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Curtonotidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Sepsidae} (antlike scavenger flies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Tethinidae} (beach flies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Sphaeroceridae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Sphaerocerinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Limosininae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Copromyzinae} \par
+%
+%
+%
+\makebox[0.0cm]{} \makebox[1.0cm]{O} MECOPTERA \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Panorpidae} (common scorpionflies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Bittacidae} (hanging scorpionflies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Boreidae} (snow scorpionflies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Meropeidae} (earwig scorpionflies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Panorpodida} (short-faced scorpionflies) \par
+%
+%
+%
+\makebox[0.0cm]{} \makebox[1.0cm]{O} SIPHONAPTERA \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Pulicidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Hystrichopsyllidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Ceratophylidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Ctenophthalmidae} \par
+%
+%
+%	
+\makebox[0.0cm]{} \makebox[1.0cm]{O} HYMENOPTERA\par
+\makebox[0.20cm]{} \makebox[1.0cm]{O-} Symphyta \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Diprionidae} (conifer sawflies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Cimbicidae} (cimbicid sawflies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Pamphiliidae} (web-spinning sawflies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Tenthredinidae} (common sawflies) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Blennocampinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Selandrinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Tenthredininae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Nematinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Heterarthrinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Allantinae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Argidae} (argid sawflies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Pergidae} (pergid sawflies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Xyelidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Cephidae} (stem sawflies) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Siricidae} (horntails) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Orussidae} (parasitic wood wasps) \par
+\makebox[0.20cm]{} \makebox[1.0cm]{O-} Apocrita \par
+\makebox[0.4cm]{} \makebox[1.0cm]{F+} Ichneumonoidea \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Ichneumonidae} (Ichneumonid wasps) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Ophioninae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Tryphoninae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Acaenitinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Rhyssinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Pimplinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Cryptinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Ichneumoninae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Campopleginae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Braconidae} (braconid wasps) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Euphorinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Agathidinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Doryctinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Rogadinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Microgastrinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Macrocentrinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Alysiinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Aphidiinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Neoneurinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Cheloniinae} \par
+\makebox[0.4cm]{} \makebox[1.0cm]{F+} Chalcidoidea \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Eurytomidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Chalcididae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Mymaridae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Trichogrammatidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Leucospidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Perilampidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Aphelinidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Pteromalidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Torymidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Eupelmidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Eulophidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Encyrtidae} \par		
+\makebox[0.4cm]{} \makebox[1.0cm]{F+} Cynipoidea \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Cynipidae} (gall wasps) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Ibaliidae} \par
+\makebox[0.4cm]{} \makebox[1.0cm]{F+} Trigonalyoidea \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Trigonalyidae} \par
+\makebox[0.4cm]{} \makebox[1.0cm]{F+} Stephanoidea \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Stephanidae} \par
+\makebox[0.4cm]{} \makebox[1.0cm]{F+} Evanioidea \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Gasteruptiidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Evaniidae} (ensign wasps) \par
+\makebox[0.4cm]{} \makebox[1.0cm]{F+} Proctotrupoidea \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Proctotrupidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Pelecinidae} (pelecinid wasps) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Diapriidae} (diapriid wasps) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Roproniidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Vanhorniidae} (vanhorniid wasps) \par
+\makebox[0.4cm]{} \makebox[1.0cm]{F+} Platygastroidea  \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Scelionidae} \par
+\makebox[0.2cm]{} \makebox[1.0cm]{O-} Aculeata \par
+\makebox[0.4cm]{} \makebox[1.0cm]{F+} Apoidea \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Sphecidae} (thread-waisted wasps) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Craborinidae} (digger wasps) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Pemphredoninae} (aphid wasps) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Crabroninae} (silver mouth, digger, organ pipe mud dauber wasps) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Bembicinae} (sand wasps) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Philanthinae} (bee wolves, weevil wasps) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Astatinae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Ampulicidae} (cockroach wasps) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Halictidae} (sweat bees) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Andrenidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Colletidae} (plasterer, yellow-faced bees) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Megachilidae} (leafcutter, mason bees) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Melittidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Apidae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Xylocopinae} (carpenter bees) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Nomadinae} (cuckoo bees) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Anthrophorinae} (digger bees) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Bombinae} (bumblebees) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Apinae} (honeybees) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Euglossinae} (orchid bees) \par
+\makebox[0.4cm]{} \makebox[1.0cm]{F+} Chrysidoidea \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Chrysididae} (cuckoo wasps) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Bethylidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Dryinidae} (pincher wasps) \par
+\makebox[0.4cm]{} \makebox[1.0cm]{F+} Vespoidea \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Pompilidae} (spider wasps) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Vespidae} (yellowjackets, hornets) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Eumeninae} (potter, mason wasps) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Polistinae} (paper wasps) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Vespinae} (social wasps, yellowjackets) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Masarinae} (pollen wasps) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Tiphiidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Sierolomorphidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Rhopalosomatidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Scoliidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Sapygidae} \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Mutillidae} (velvet ants) \par
+\makebox[0.6cm]{} \makebox[1.0cm]{F} \textbf{Formicidae} (ants) \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Formicinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Myrmicinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Dolichoderinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Ponerinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Pseudomyrmecinae} \par
+\makebox[0.8cm]{} \makebox[1.0cm]{F-} \textbf{Ecitoninae} \par
+}
+\end{document}
